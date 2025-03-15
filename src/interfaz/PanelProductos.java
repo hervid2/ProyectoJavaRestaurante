@@ -22,7 +22,7 @@ public class PanelProductos extends JPanel {
         btnEliminar = new JButton("Eliminar Producto");
 
         btnAgregar.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
                 String nombre = txtNombre.getText();
                 String ingredientes = txtIngredientes.getText();
@@ -35,7 +35,7 @@ public class PanelProductos extends JPanel {
         });
 
         btnEliminar.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
                 String nombre = txtNombre.getText();
                 gestorProductos.eliminarProducto(nombre);
